@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="css/global.css">-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <!--<script src="js/jquery-1.8.3.min.js"></script>-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <script src="js/index.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/swiper-3.3.1.min.js"></script>
+</head>
+<body>
+<header>
+    <!--swiper-->
+    <div class="swiper-container">
+    	<div class="swiper-wrapper">
+    		<div class="swiper-slide banner">
+    			<img src="img/banner1.gif" alt="" />
+    		</div>
+    		<div class="swiper-slide banner">
+    			<img src="img/banner2.jpg" alt="" />
+    		</div>
+    		<div class="swiper-slide banner">
+    			<img src="img/banner3.gif" alt="" />
+    		</div>
+    		<div class="swiper-slide banner">
+    			<img src="img/banner4.gif" alt="" />
+    		</div>
+    	</div>
+    	<!--进度-->
+    	<div class="swiper-pagination swiper-pagination-white">
+    		<!--span-->
+    	</div>
+    	<!--前进后退-->
+    	<div class="swiper-button-next swiper-button-white"></div>
+    	<div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    
+    
+    
+    <div class="navbox">
+        <ul>
+            <li><a href="">
+                <i>&#xe608;</i>
+                <p>菜鸟升级</p>
+            </a></li>
+            <li><a href="">
+                <i>&#xe606;</i>
+                <p>烘焙调情</p>
+            </a></li>
+            <li><a href="">
+                <i>&#xe605;</i>
+                <p>厨房百科</p>
+            </a></li>
+            <li><a href="">
+                <i>&#xe60a;</i>
+                <p>菜谱分类</p>
+            </a></li>
+        </ul>
+    </div>
+</header>
+<section>
+    <ul>
+        <li>
+            <a href="#">
+                <img src="img/listView_4.jpg">
+                <span class="word clr">
+                    <i>&#xe60c;</i>
+                    <h2>中秋来了</h2>
+                    <p>今年你发现了什么新鲜的月饼馅呢？</p>
+                </span>
+
+            </a>
+        </li>
+        <li><a href="#">
+                <img src="img/listView_1.jpg">
+                <span class="word">
+                    <i>&#xe60c;</i>
+                    <h2>秋季吃什么水果</h2>
+                    <p>十种秋季时令水果不能少</p>
+                </span>
+
+            </a>
+        </li>
+        <li><a href="#">
+                <img src="img/listView_3.jpg">
+                <span class="word">
+                    <i>&#xe60c;</i>
+                    <h2>你不知道的厨房小妙招</h2>
+                    <p>还在烦恼厨房油污洗不掉吗？</p>
+                </span>
+
+            </a>
+        </li>
+    </ul>
+</section>
+<footer>
+    <ul>
+        <li class="on">
+            <i>&#xe605;</i>
+            <p>主页</p>
+        </li>
+        <li>
+            <i>&#xe607;</i>
+            <p>商场</p>
+        </li>
+        <li>
+            <i>&#xe601;</i>
+            <p>养生</p>
+        </li>
+        <li>
+            <i>&#xe604;</i>
+            <p>小妙招</p>
+        </li>
+        <li>
+            <i>&#xe602;</i>
+            <p>我的</p>
+        </li>
+    </ul>
+</footer>
+<script>
+	var mySwiper = new Swiper('.swiper-container',{
+		loop:true,
+		direction:'horizontal',	
+		width:window.innerWidth,
+		prevButton:'.swiper-button-prev',
+		nextButton:'.swiper-button-next',
+		pagination : '.swiper-pagination',
+		autoplay:1500,
+		autoplayDisableOnInteraction:false
+			})
+</script>
+</body>
+</html>
